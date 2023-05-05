@@ -1,38 +1,210 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.scan_main{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 10px;
+  /* -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 20px; */
+
+}
+
+.img_size{
+  max-height: 250px;
+  max-width: 300px;
+  margin: 5px;
+}
+
+.preview_zone{
+  display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.input_s{
+margin-top: 20px;
+}
+
+.button_s{
+  margin-top: 20px;
   color: white;
+  background-color: #0abab5;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 17px;
 }
 
-.App-link {
-  color: #61dafb;
+.image-preview{ 
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete-button{
+  position: absolute;
+  top: 0px;
+  left: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+.button__block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.button__open{
+  background: rgba(224, 224, 224, 0.5);
+  width: 80px;
+  height: 35px;
+  border: none;
+  border-radius: 7px;
+  color: #0F56B3;
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+.button__open__icon{
+  margin-left: 4px;
+}
+
+.button__add{
+  background: #0F56B3;
+  display: flex;
+  width: 80px;
+  height: 35px;
+  border: none;
+  border-radius: 7px;
+  color: #C5DCFA;
+  margin-right: 10px;
+  font-size: 13px;
+  justify-content: center;
+  align-items: center;
+}
+.button__add__icon{
+  margin-right: 4px;
+}
+.button__delete__icon{
+  margin-right: 4px;
+}
+.button__ok__icon{
+  margin-right: 4px;
+}
+
+
+.button__right{
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 7px;
+  background-image: url('./images/🦆\ icon\ _reload_right.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+}
+.button__left{
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 7px;
+  background-image: url('./images/🦆\ icon\ _reload_left.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: scale(-1, 1);
+  margin-right: 5px;
+}
+
+.button__delete{
+  background:  #E0E0E080;
+  width: 80px;
+  height: 35px;
+  border: none;
+  border-radius: 7px;
+  color: #7F4C0A;
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.button__block__lr{
+  display: flex;
+  flex-direction: row;
+}
+
+.button__add__input{
+  display: none;
+  cursor: pointer;
+}
+
+.preview__block{
+  margin: 18px;
+  height: auto;
+  width: -webkit-fill-available;
+  display: flex;
+  background-color: #0000000D;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.button__submit{
+  width: 112px;
+  height: 28px;
+  color: white;
+  background-color: #1F8B24;
+  border: none;
+  border-radius: 7px;
+  font-size: 13px;
+}
+
+.radio-buttons input[type="radio"] {
+  display: none;
+
+}
+
+.radio-buttons{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.radio-buttons label {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #444;
+  background-color: #f5f5f5;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-right: 10px;
+}
+
+.radio-buttons input[type="radio"]:checked + label {
+ border:2px solid #0F56B3;
+  border-color: #0F56B3;
+ 
+}
+
+
+
+
+
+.preview__block > img {
+  max-width: 100%;
+  max-height: 400px;
+  margin-top: 20px;
+  object-fit: contain;
+  }
