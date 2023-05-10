@@ -61,6 +61,7 @@ margin-top: 20px;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  width: 100%;
 }
 
 .button__open{
@@ -81,7 +82,7 @@ margin-top: 20px;
 .button__add{
   background: #0F56B3;
   display: flex;
-  width: 80px;
+  width: 100%;
   height: 35px;
   border: none;
   border-radius: 7px;
@@ -99,6 +100,7 @@ margin-top: 20px;
 }
 .button__ok__icon{
   margin-right: 4px;
+
 }
 
 
@@ -152,7 +154,7 @@ margin-top: 20px;
 .preview__block{
   margin: 18px;
   height: auto;
-  width: -webkit-fill-available;
+  width: 100%;
   display: flex;
   background-color: #0000000D;
   justify-content: center;
@@ -160,13 +162,49 @@ margin-top: 20px;
 }
 
 .button__submit{
-  width: 112px;
-  height: 28px;
+  width: 100%;
+  height: 40px;
   color: white;
-  background-color: #1F8B24;
+  background-color: #0F56B3;
+  /* background-color: #1F8B24; */
   border: none;
   border-radius: 7px;
   font-size: 13px;
+  /* margin-top: 10px; */
+  /* margin-bottom: 10px; */
+}
+.button__submit.sent {
+  background-color: #1F8B24 !important;
+}
+
+.submit__block{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+}
+
+.submit__block__input__in{
+  border: none;
+  height: 35px;
+  background: #8080803d;
+  padding-left: 7px;
+  border-radius: 7px;
+  width: 100%;
+}
+
+.submit__block__input{
+  display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 100%;
+}
+
+.submit__block__save{
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 5px;
 }
 
 .radio-buttons input[type="radio"] {
@@ -200,11 +238,16 @@ margin-top: 20px;
 
 
 
-
-
 .preview__block > img {
   max-width: 100%;
   max-height: 400px;
   margin-top: 20px;
   object-fit: contain;
+  }
+
+  .error__message{
+    text-align: center;
+  }
+  .error__block{
+    margin-top: 50px;
   }

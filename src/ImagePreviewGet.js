@@ -1,12 +1,14 @@
 import React from "react";
 
-function ImagePreviewGet({ image }) {
-    return (
-      <div className="preview__get">
-        {image && <img src={image} alt="preview"/>}
-      </div>
-    );
-  }
+function ImagePreviewGet({ src, rotation }) {
+
+
+
+  return (
+    <div className="image__preview" style={{ transform: `rotate(${rotation}deg)` }}>
+      <img className="img_size" src={src} alt="preview" />
+    </div>
+  );
+}
 
 export default ImagePreviewGet;
-
